@@ -74,9 +74,9 @@ const Header = () => {
             <Link to="/sponsors" className="nav-link-unique py-2 md:py-0 hover:text-slate-400">Sponsors</Link>
             <Link to="/team" className="nav-link-unique py-2 md:py-0 hover:text-slate-400">Team</Link>
 
-            <div className="text-lg text-white font-mono h-8 rounded-md w-40 bg-purple-700 hover:bg-white hover:text-black flex items-center justify-center cursor-pointer mt-2 md:mt-0">
+            <Link to="/register" className="text-lg text-white font-mono h-8 rounded-md w-40 bg-purple-700 hover:bg-white hover:text-black flex items-center justify-center cursor-pointer mt-2 md:mt-0">
                 Let's Register
-            </div>
+            </Link>
           </div>
         </div> 
       </nav>
