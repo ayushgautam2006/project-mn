@@ -29,10 +29,7 @@ const sponsors = [
 
 const Sponsorship = () => {
   const navStyle = {
-    // Replace this URL with the one you have
     backgroundImage: `url('https://minare.nitrkl.ac.in/static/media/banner-bg.cc1273af450504afe755.png')`, 
-    // backgroundSize: 'cover',
-    // backgroundPosition: 'center',
   };
   return (
     <div className="p-8 space-y-10  mx-auto pt-40" style={navStyle}>
