@@ -47,7 +47,7 @@ const events = [
 
 const Home = () => {
   const navStyle = {
-    // Replace this URL with the one you have
+
     backgroundImage: `url('https://minare.nitrkl.ac.in/static/media/banner-bg.cc1273af450504afe755.png')`, 
   };
   return (
@@ -90,7 +90,6 @@ const Home = () => {
 
       {/* About Department */}
       <div className="bg-transparent p-6 rounded-2xl shadow-md flex flex-col md:flex-row items-center gap-6">
-        {/* Text Content */}
         <div className="md:w-1/2">
           <h2 className="text-2xl font-bold mb-4 text-gray-100">
             About Department
@@ -112,7 +111,7 @@ const Home = () => {
         {/* Department Image */}
         <div className="md:w-1/2">
           <img
-            src="https://res.cloudinary.com/dtxoiglst/image/upload/v1710261393/minare/t1mapgsdjq2eyc4ch1fb.jpg" // Example image, replace with your own
+            src="https://res.cloudinary.com/dtxoiglst/image/upload/v1710261393/minare/t1mapgsdjq2eyc4ch1fb.jpg"
             alt="Department of Mining Engineering"
             className="w-full rounded-lg shadow-lg object-cover"
           />
