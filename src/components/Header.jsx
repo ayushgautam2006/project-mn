@@ -18,7 +18,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Inline style for the background image on the main nav container
   const navBackgroundStyle = {
     backgroundImage: `url('https://minare.nitrkl.ac.in/static/media/banner-bg.cc1273af450504afe755.png')`,
     backgroundSize: 'cover',
@@ -50,7 +49,6 @@ const Header = () => {
           </h2>
         </Link>
 
-        {/* Hamburger Button */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -63,12 +61,11 @@ const Header = () => {
 
         {/* Navigation Links Container */}
         <div
-          // Added conditional background for mobile menu when open
+
           className={`w-full md:flex md:w-auto transition-all duration-300 ease-in-out ${
-            isOpen ? 'block bg-black bg-opacity-90 p-4 mt-2 rounded-md' : 'hidden' // Added bg-black and padding here
+            isOpen ? 'block bg-black bg-opacity-90 p-4 mt-2 rounded-md' : 'hidden'
           }`}
         >
-          {/* Layout for links: vertical column on mobile, horizontal row on desktop */}
           <div className={`flex flex-col md:flex-row gap-4 md:gap-8 items-center text-center text-white pt-4 md:pt-0 ${
             isScrolled ? 'text-lg ease-in-out duration-200' : 'text-xl' 
           }`}>
@@ -77,7 +74,6 @@ const Header = () => {
             <Link to="/sponsors" className="nav-link-unique py-2 md:py-0 hover:text-slate-400">Sponsors</Link>
             <Link to="/team" className="nav-link-unique py-2 md:py-0 hover:text-slate-400">Team</Link>
             
-            {/* Let's Register Button */}
             <div className="text-md text-white font-mono h-8 rounded-md w-40 bg-purple-700 hover:bg-white hover:text-black flex items-center justify-center cursor-pointer mt-2 md:mt-0">
                 Let's Register
             </div>
