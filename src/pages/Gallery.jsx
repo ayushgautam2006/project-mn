@@ -2,7 +2,6 @@ import React from 'react'
 
 const Gallery = () => {
   const navStyle = {
-    // Replace this URL with the one you have
     backgroundImage: `url('https://minare.nitrkl.ac.in/static/media/banner-bg.cc1273af450504afe755.png')`, 
   };
   return (
