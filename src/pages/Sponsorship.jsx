@@ -33,6 +33,7 @@ const Sponsorship = () => {
   };
   return (
     <div className="p-8 space-y-10  mx-auto pt-40" style={navStyle}>
+      <div className="bg-black/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-purple-700/50">
       <h1 className="text-3xl font-bold text-gray-100 mb-3 ml-5">
         Why Sponsor Minare?
       </h1>
@@ -47,8 +48,9 @@ const Sponsorship = () => {
           The souvenir will also be published, highlighting the details of the events.
         </p>
       </div>
+      </div>
 
-      <div className="bg-transparent p-6 rounded-2xl shadow-md">
+      <div className="bg-black/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-purple-700/50">
         <h2 className="text-2xl font-semibold mb-4 text-gray-100">Why Sponsor?</h2>
         <ul className="list-disc list-inside text-gray-200 space-y-2">
           <li>Widespread publicity across multiple platforms</li>
@@ -59,7 +61,7 @@ const Sponsorship = () => {
       </div>
 
       {/* Sponsors Grid */}
-      <div className="bg-transparent' p-6 rounded-2xl shadow-md">
+      <div className="bg-black/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-purple-700/50">
         <h2 className="text-2xl font-semibold mb-6 text-gray-200 text-center">Our Proud Sponsors</h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center">
           {sponsors.map((sponsor, idx) => (
@@ -74,14 +76,14 @@ const Sponsorship = () => {
         </div>
       </div>
 
-      <div className="bg-transparent p-6 rounded-2xl shadow-md">
+      <div className="bg-black/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-purple-700/50">
         <h2 className="text-2xl font-semibold mb-4 text-gray-100">Bank Details</h2>
         <p className="text-gray-200"><strong>A/c. Name:</strong> MS MINING ENGG SOCIETY</p>
         <p className="text-gray-200"><strong>A/c. Number:</strong> 10138951149</p>
         <p className="text-gray-200"><strong>IFSC Code:</strong> SBIN0002109</p>
       </div>
 
-      <div className="bg-transparent p-6 rounded-2xl shadow-md">
+      <div className="bg-black/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-purple-700/50">
         <h2 className="text-2xl font-semibold mb-4 text-gray-100">Contact Details</h2>
         <p className="text-gray-200">
           <strong>Satyabrata Biswal</strong><br />

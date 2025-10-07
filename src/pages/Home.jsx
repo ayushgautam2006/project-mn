@@ -53,7 +53,7 @@ const Home = () => {
   return (
     <div className="p-6 pt-40 space-y-12 min-h-screen" style={navStyle}>
       {/* About Minare */}
-      <div className="bg-transparent p-6 rounded-2xl shadow-lg">
+      <div className="bg-black/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-purple-700/50">
         <h2 className="text-2xl font-bold mb-4 text-gray-100">About Minare</h2>
         <p className="text-gray-200 leading-relaxed">
           The Mining Engineering Society (MES), an association of students,
@@ -89,7 +89,7 @@ const Home = () => {
       </div>
 
       {/* About Department */}
-      <div className="bg-transparent p-6 rounded-2xl shadow-md flex flex-col md:flex-row items-center gap-6">
+      <div className="bg-black/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-purple-700/50 flex flex-col md:flex-row items-center gap-6">
         <div className="md:w-1/2">
           <h2 className="text-2xl font-bold mb-4 text-gray-100">
             About Department
@@ -119,7 +119,7 @@ const Home = () => {
       </div>
 
       {/* Vision & Mission */}
-      <div className="bg-transparent p-6 rounded-2xl shadow-md">
+      <div className="bg-black/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-purple-700/50">
         <h2 className="text-2xl font-bold mb-4 text-gray-100">
           Vision & Mission
         </h2>
@@ -132,7 +132,7 @@ const Home = () => {
       </div>
 
       {/* Events */}
-      <div className="bg-transparent p-6 rounded-2xl shadow-md">
+      <div className="bg-black/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-purple-700/50">
         <h2 className="text-3xl font-bold mb-8 text-gray-100 text-center">
           Events
         </h2>
