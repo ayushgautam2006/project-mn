@@ -57,7 +57,7 @@ const Team = () => {
       <h2 className="text-2xl font-bold text-gray-100 mb-6">{groupName}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
         {members.map((member, idx) => (
-          <div key={idx} className="bg-transparent/15 rounded-xl shadow-lg p-4 text-center">
+          <div key={idx} className="bg-black/90 rounded-xl shadow-lg p-4 text-center">
             <img
               src={profileImage}
               alt={member.name}

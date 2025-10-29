@@ -61,20 +61,25 @@ const Header = () => {
 
         {/* Navigation Links Container */}
         <div
-
-          className={`w-full md:flex md:w-auto transition-all duration-300 ease-in-out ${
-            isOpen ? 'block bg-black bg-opacity-90 p-4 mt-2 rounded-md' : 'hidden'
+          className={`md:flex md:w-auto transition-all duration-300 ease-in-out ${
+            isOpen 
+              ? 'fixed inset-0 top-0 left-0 w-full h-full bg-black z-40 flex items-center justify-center' 
+              : 'hidden'
           }`}
         >
-          <div className={`flex flex-col md:flex-row gap-4 md:gap-8 items-center text-center text-white pt-4 md:pt-0 ${
-            isScrolled ? 'text-lg ease-in-out duration-200' : 'text-xl' 
+          <div className={`flex flex-col md:flex-row gap-8 md:gap-8 items-center text-center text-white ${
+            isOpen 
+              ? 'text-2xl space-y-8' 
+              : isScrolled 
+                ? 'text-lg ease-in-out duration-200' 
+                : 'text-xl'
           }`}>
-            <Link to="/" className="nav-link-unique py-2 md:py-0 hover:text-slate-400">Home</Link>
-            <Link to="/gallery" className="nav-link-unique py-2 md:py-0 hover:text-slate-400">Gallery</Link>
-            <Link to="/sponsors" className="nav-link-unique py-2 md:py-0 hover:text-slate-400">Sponsors</Link>
-            <Link to="/team" className="nav-link-unique py-2 md:py-0 hover:text-slate-400">Team</Link>
+            <Link to="/" className="nav-link-unique py-2 md:py-0 hover:text-purple-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/gallery" className="nav-link-unique py-2 md:py-0 hover:text-purple-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>Gallery</Link>
+            <Link to="/sponsors" className="nav-link-unique py-2 md:py-0 hover:text-purple-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>Sponsors</Link>
+            <Link to="/team" className="nav-link-unique py-2 md:py-0 hover:text-purple-400 transition-colors duration-200" onClick={() => setIsOpen(false)}>Team</Link>
 
-            <Link to="/register" className="text-lg text-white font-mono h-8 rounded-md w-40 bg-purple-700 hover:bg-white hover:text-black flex items-center justify-center cursor-pointer mt-2 md:mt-0">
+            <Link to="/register" className="text-xl text-white font-mono py-3 px-6 rounded-md bg-purple-700 hover:bg-purple-600 transition-colors duration-200 mt-4 md:mt-0" onClick={() => setIsOpen(false)}>
                 Let's Register
             </Link>
           </div>
